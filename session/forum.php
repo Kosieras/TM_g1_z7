@@ -220,7 +220,7 @@ messOpt.style.display = "block";
       <button type="button" onclick="showMessage()" id="showBM" class="showBM" style='display:none'>Dodaj wiadomosc</button>
       <div id="addL" name="addL">        
 	<div id="messOpt" class="messOpt" style='display:none'>
-	<form method="POST" action="forum.php?topic=<?php echo $_SESSION['top'];  ?>" enctype="multipart/form-data">
+	<form method="POST" action="forum.php?topic=<?php echo $_GET['topic'];  ?>" enctype="multipart/form-data">
       <h4>Dodaj Wiadomość:</h4>
     <input type="text" name="messageName" id="messageName" value="Wiadomosc" >
     <input type="submit" id="createMessage" name="createMessage" value="Add"/>      
